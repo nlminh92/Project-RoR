@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_products: MyString
+  status: false
+  image: MyString
+  gender: MyString
+  type: 
+  type_sell: MyString
+  code: MyString
+  season: MyString
+  description: MyText
+  date_availability: MyString
+  country: MyString
+  price: 9.99
+  size: MyString
+  discount: 1
+  variants: MyString
+  on_sale: false
+  brand_id: 1
+  retailler_id: 1
+
+two:
+  name_products: MyString
+  status: false
+  image: MyString
+  gender: MyString
+  type: 
+  type_sell: MyString
+  code: MyString
+  season: MyString
+  description: MyText
+  date_availability: MyString
+  country: MyString
+  price: 9.99
+  size: MyString
+  discount: 1
+  variants: MyString
+  on_sale: false
+  brand_id: 1
+  retailler_id: 1

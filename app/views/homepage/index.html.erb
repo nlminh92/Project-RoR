@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+
+  <body>
+      <%= render 'homepage/header' %>
+
+      <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+          <%= yield %>
+      <%= render 'homepage/footer' %>
+        <h3 class="dark-grey"> </h3></br>
+        <h3 class="dark-grey"> </h3></br>
+        <h3 class="dark-grey"> </h3></br>
+        <h3 class="dark-grey"> </h3></br>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+
+
+  </body>
+</html>
+  

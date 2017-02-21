@@ -1,0 +1,71 @@
+
+    <%= render 'homepage/header' %>
+      <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    
+        <!-- /Top Nav -->
+
+      </div>
+    </nav>
+
+<div class="container-fluid">
+    <section class="container">
+    <div class="container-page">        
+      <div class="col-md-6">
+        <h3 class="dark-grey"> </h3></br>
+        <h3 class="dark-grey"> </h3></br>
+        <h3 class="dark-grey">Registration for free </h3>
+        <h5 class="dark-grey">       FILL THE SIMPLE FORM BELOW AND OUR TEAM WILL CONTACT YOU WITHIN 48 HOURS. </h5>
+
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :Company_name %>
+      <%= f.text_field :company %>
+
+      <%= f.label :Company_website %>
+      <%= f.text_field :website %>    
+
+      <%= f.label :Address %>
+      <%= f.text_field :address %>
+
+      <%= f.label :Zip_code %>
+      <%= f.text_field :zip_code %> 
+
+      <%= f.label :Country %>
+      <%= f.text_field :country %> 
+
+      <%= f.label :first_name_contact %>
+      <%= f.text_field :firstname_contact %>
+
+      <%= f.label :last_name_contact %>
+      <%= f.text_field :lastname_contact %>
+
+      <%= f.label :phone_number %>
+      <%= f.telephone_field :phone %>    
+
+      <%= f.label :description %>
+      <%= f.text_field :description %>  
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+
+    <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
+  
