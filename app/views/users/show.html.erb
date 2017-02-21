@@ -7,6 +7,10 @@
     <section class="user_info">
       <h1>
        <br>Thanks for getting in touch!</br>
+       <h1>
+        <%= gravatar_for @user %>
+        <%= @user.company %>
+      </h1>
        <p>Edit user <%= link_to "Edit", edit_user_path(current_user) %></p>
       </h1>
     </section>
