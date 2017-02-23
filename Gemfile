@@ -12,7 +12,7 @@ group :development do
 	gem 'sqlite3'
 end
 
-
+gem 'simple_form'
 gem 'faker',          '1.6.6'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'

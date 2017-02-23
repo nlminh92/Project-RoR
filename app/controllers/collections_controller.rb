@@ -1,5 +1,5 @@
 class CollectionsController < ApplicationController
-  before_action :set_collections, only: [:show, :edit]
+  # before_action :set_collections, only: [:show, :edit]
   respond_to :html
 
 	def index
@@ -14,7 +14,7 @@ class CollectionsController < ApplicationController
   end
 
   def create
-    @collection = current_user.collections.new(collection_params)
+    @collection = Collection.new(collection_params)
     @collection.save
     respond_with(@collection)
   end
