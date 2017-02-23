@@ -1,6 +1,9 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token
 
+
+  has_many :collection
+  has_many :product
   #before_save   :downcase_email
   #before_create :create_activation_digest
   #attr_accessor :password

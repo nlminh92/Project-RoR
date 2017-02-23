@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   get 'brands/dashboard'
 
-  get 'collections/new'
+
+  get 'collections/index'
   #get "logout" => "sessions#destroy", :as => "logout"
   #get "login" => "sessions#new", :as => "login"
   #get "login" => "sessions#create", :as => "login"
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
   get "retailers" => "retailers#new", :as => "retailers"
   get "blog" => "blog#new", :as => "blog"
 
+
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
@@ -26,6 +28,7 @@ Rails.application.routes.draw do
   root "homepage#index"
 
   resources :users
+  resources :collections
   resources :sessions
   resources :account_activations, only: [:edit]
 

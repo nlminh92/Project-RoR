@@ -1,0 +1,1 @@
+json.extract! @collection, :name_collections, :date_availability, :description, :image

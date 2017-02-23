@@ -1,0 +1,13 @@
+<h1 class="text-center">Collection</h1>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= link_to collection_path(collection) do %>
+      <%= image_tag collection.image.url{:original}, class: "image-responsive"  %>
+      <% end %>
+      <div class="caption">
+        <h5><strong><%= link_to collection.name_collections, collection_path(collection) %></strong></h5>
+        
+      </div>
+    </div>
+  </div>
