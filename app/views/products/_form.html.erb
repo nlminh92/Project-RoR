@@ -1,0 +1,38 @@
+<%= render 'homepage/header' %>
+	<%= simple_form_for @product do |f| %>
+  <%= f.error_notification %>
+
+  
+    <%= f.input :name_products, required: true, label: false, placeholder: "Products title", input_html: {class: "form-control"} %>
+ 
+    <%= f.input :date_availability, required: true, label: false, placeholder: "Date avaible", input_html: {class: "form-control"} %>
+
+    <%= f.input :description, required: true, label: false, placeholder: "Description", input_html: {class: "form-control", rows: 5} %>
+    
+    <%= f.input :status, required: true, label: false, placeholder: "Status", input_html: {class: "form-control"} %>    
+
+    <%= f.input :image %>
+    
+    <%= f.input :gender, required: true, label: false, placeholder: "Gender", input_html: {class: "form-control"} %>
+
+    <%= f.input :type, required: true, label: false, placeholder: "Type", input_html: {class: "form-control"} %>
+
+    <%= f.input :type_sell, required: true, label: false, placeholder: "Type sell", input_html: {class: "form-control"} %>
+
+    <%= f.input :code, required: true, label: false, placeholder: "Code", input_html: {class: "form-control"} %>
+
+    <%= f.input :season, required: true, label: false, placeholder: "Season", input_html: {class: "form-control"} %>
+
+    
+
+    <%= f.input :price, required: true, label: false, placeholder: "Price", input_html: {class: "form-control"} %>
+
+    <%= f.input :size, required: true, label: false, placeholder: "Size", input_html: {class: "form-control"} %>
+
+    <%= f.input :discount, required: true, label: false, placeholder: "Discount", input_html: {class: "form-control"} %>
+
+    <%= f.input :on_sale, required: true, label: false, placeholder: "On sale", input_html: {class: "form-control"} %>
+    
+    <%= f.button :submit, class: "btn btn-primary btn-block" %>
+  
+<% end %>

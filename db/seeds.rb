@@ -22,7 +22,7 @@
 #               activated: true,
 #               activated_at: Time.zone.now)
 # end
-# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+# 
 User.create!(email: "example@railstutorial.org",
              password:              "foobar",
              password_confirmation: "foobar",

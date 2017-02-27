@@ -33,7 +33,6 @@ gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass', '3.3.6'
 gem 'bcrypt',         '3.1.11'
 gem 'rails-controller-testing'
-gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'jquery-ui-rails', '~> 4.2.1'
 
 # Use jquery as the JavaScript library

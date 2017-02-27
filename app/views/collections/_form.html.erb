@@ -1,7 +1,9 @@
+<%= render 'homepage/header' %>
+<div class="minh">
 	<%= simple_form_for @collection do |f| %>
   <%= f.error_notification %>
 
-  
+
     <%= f.input :name_collections, required: true, label: false, placeholder: "Collection Title", input_html: {class: "form-control"} %>
  
     <%= f.input :date_availability, required: true, label: false, placeholder: "Date avaible", input_html: {class: "form-control"} %>
@@ -16,3 +18,4 @@
     <%= f.button :submit, class: "btn btn-primary btn-block" %>
   
 <% end %>
+</div>

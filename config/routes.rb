@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
   devise_for :users
   get 'sessions/new'
 
@@ -10,6 +8,7 @@ Rails.application.routes.draw do
 
 
   get 'collections/index'
+  get 'products/index'
   #get "logout" => "sessions#destroy", :as => "logout"
   #get "login" => "sessions#new", :as => "login"
   #get "login" => "sessions#create", :as => "login"
@@ -27,6 +26,7 @@ Rails.application.routes.draw do
 
   root "homepage#index"
 
+  resources :products
   resources :users
   resources :collections
   resources :sessions
